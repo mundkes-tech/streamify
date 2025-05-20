@@ -47,6 +47,14 @@
       "rating": "10",
       "image": "images/saripoddha_saanivaram.jpg",
       "releaseYear": "2025"
+    },
+    {
+      "id": "8360",
+      "title": "sample",
+      "genre": "comedy,action",
+      "rating": "9",
+      "image": "/images/spiderman.jpg",
+      "releaseYear": "2000"
     }
   ]
 }
