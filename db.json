@@ -1,0 +1,60 @@
+{
+  "movies": [
+    {
+      "id": "1",
+      "title": "Inception",
+      "genre": "Sci-Fi",
+      "rating": 8.8,
+      "releaseYear": 2020,
+      "image": "/images/redball.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Interstellar",
+      "genre": "Sci-Fi",
+      "rating": 8.6,
+      "releaseYear": 2020,
+      "image": "/images/explore.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Spider-Man",
+      "genre": "Comedy",
+      "rating": 8.6,
+      "releaseYear": 2020,
+      "image": "/images/spiderman.jpg"
+    },
+    {
+      "id": "0057",
+      "title": "3 idiots",
+      "genre": "Comedy",
+      "rating": "9",
+      "image": "/images/3_idiots.jpg",
+      "releaseYear": "2016"
+    },
+    {
+      "id": "e033",
+      "title": "Madgaon Express",
+      "genre": "Comedy",
+      "rating": "9",
+      "image": "images/Madgaon_express.jpg",
+      "releaseYear": "2023"
+    },
+    {
+      "id": "1736",
+      "title": "Saripoddha Saanivaram",
+      "genre": "Action",
+      "rating": "10",
+      "image": "images/saripoddha_saanivaram.jpg",
+      "releaseYear": "2025"
+    },
+    {
+      "id": "8360",
+      "title": "sample",
+      "genre": "comedy,action",
+      "rating": "9",
+      "image": "/images/spiderman.jpg",
+      "releaseYear": "2000"
+    }
+  ]
+}

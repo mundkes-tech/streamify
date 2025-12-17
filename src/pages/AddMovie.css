@@ -1,0 +1,35 @@
+.add-movie-card {
+    border-radius: 12px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .add-movie-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .char-count {
+    font-size: 12px;
+    color: gray;
+    float: right;
+    margin-top: 5px;
+  }
+  
+  .movie-preview {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .add-movie-btn {
+    font-size: 16px;
+    padding: 12px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .add-movie-btn:hover {
+    background-color: #0056b3;
+  }
+  
