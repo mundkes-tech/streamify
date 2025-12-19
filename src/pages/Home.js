@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+import { fetchMovies as fetchMoviesApi } from "../api/movieApi";
 import MovieSearch from "../components/MovieSearch";
 import MovieList from "../components/MovieList";
 
@@ -14,10 +14,10 @@ const Home = () => {
     setLoading(true);
     setError(null);
     try {
-      const response = await axios.get("http://localhost:5000/movies");
-      setMovies(response.data);
-      setFilteredMovies(response.data);
-      console.log("📢 Fetched Movies:", response.data); // ✅ Debugging log
+      const data = await fetchMoviesApi();
+      setMovies(data);
+      setFilteredMovies(data);
+      console.log("📢 Fetched Movies:", data); // ✅ Debugging log
     } catch (err) {
       setError("Failed to fetch movies. Please try again.");
       console.error("❌ Fetch Error:", err);

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/movies";
+const API_URL = "https://streamify-0t6p.onrender.com/movies";
 
 export const fetchMovies = async () => {
   try {
@@ -9,5 +9,15 @@ export const fetchMovies = async () => {
   } catch (error) {
     console.error("Error fetching movies:", error);
     return [];
+  }
+};
+
+export const addMovie = async (newMovie) => {
+  try {
+    const response = await axios.post(API_URL, newMovie);
+    return response.data;
+  } catch (error) {
+    console.error("Error adding movie:", error);
+    throw error;
   }
 };

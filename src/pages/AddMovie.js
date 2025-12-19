@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from "axios";
+import { addMovie } from "../api/movieApi";
 import { Form, Button, Container, Row, Col, Card, Image } from "react-bootstrap";
 import "./AddMovie.css"; // Import custom styles
 
@@ -26,7 +26,7 @@ const AddMovie = () => {
 
     const newMovie = { title, genre, rating, image, releaseYear };
     try {
-      await axios.post("http://localhost:5000/movies", newMovie);
+      await addMovie(newMovie);
       alert("🎉 Movie added successfully!");
       setTitle("");
       setGenre("");
