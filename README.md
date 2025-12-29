@@ -1,70 +1,169 @@
-# Getting Started with Create React App
+# 🎥 Streamify — Movie Streaming Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive movie streaming platform built with React (Frontend) and Node.js / Express (Backend).
+Streamify lets users browse, search, and add movies through a clean and intuitive interface.
 
-## Available Scripts
+<div align="center">
 
-In the project directory, you can run:
+![alt text](image.png)
 
-### `npm start`
+![alt text](image-1.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![alt text](image-2.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![alt text](image-3.png)
 
-### `npm test`
+</div>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Live Demo
 
-### `npm run build`
+🔗 Try Streamify here:
+👉 https://streamifymovies.netlify.app/
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ✨ Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- ✔️ Browse a curated movie collection
+- ✔️ Search movies by title or genre
+- ✔️ Add new movies to the catalog
+- ✔️ Delete movies from the list
+- ✔️ Fully responsive & mobile-friendly
+- ✔️ Lightweight & fast UI with React
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠 Tech Stack
 
-### `npm run eject`
+### 🎨 Frontend
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- React
+- React Router
+- Axios
+- Bootstrap
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### ⚙️ Backend
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Node.js
+- Express.js
+- CORS
+- JSON Server (mock REST API for development)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## ⚡ Installation & Setup
 
-## Learn More
+### ✔️ Prerequisites
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Node.js (v14+)
+- npm or yarn
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 🔧 Clone Repository
+```bash
+git clone https://github.com/your-username/streamify.git
+cd streamify
+```
 
-### Code Splitting
+### 📦 Install Frontend Dependencies
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 🗄️ Install Backend Dependencies
+```bash
+cd backend
+npm install
+cd ..
+```
 
-### Analyzing the Bundle Size
+### ▶️ Start Backend Server
+```bash
+cd backend
+npm start
+```
+Runs on → http://localhost:5000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### ▶️ Start Frontend
+```bash
+npm start
+```
+Runs on → http://localhost:3000
 
-### Making a Progressive Web App
+## 📖 How to Use
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. 1️⃣ Open the app in your browser
+2. 2️⃣ Browse movies on the home page
+3. 3️⃣ Search movies using the search bar
+4. 4️⃣ Click Add Movie to submit new entries
+5. 5️⃣ View movie details in the list
 
-### Advanced Configuration
+## 🔌 API Endpoints
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | /movies | Fetch all movies |
+| POST | /movies | Add a new movie |
+| DELETE | /movies/:id | Delete movie |
 
-### Deployment
+## 🧾 Sample Movie Object
+```json
+{
+  "id": "1234567890",
+  "title": "Movie Title",
+  "genre": "Action",
+  "year": 2023,
+  "description": "A brief description of the movie"
+}
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🗂 Project Structure
+```
+streamify/
+├── public/
+├── src/
+│   ├── api/
+│   ├── components/
+│   ├── pages/
+│   └── ...
+├── backend/
+│   ├── server.js
+│   └── package.json
+├── db.json
+└── package.json
+```
 
-### `npm run build` fails to minify
+## 🧪 Testing
+```bash
+npm test
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🚢 Deployment
+
+### 🌍 Frontend
+```bash
+npm run build
+```
+Deploy via Netlify / Vercel / Firebase
+
+### 🧾 Backend
+
+Suitable for:
+
+- Railway
+- Render
+- Heroku
+- Any Node hosting provider
+
+## 🤝 Contributing
+
+- Fork repository
+- Create feature branch
+- Commit changes
+- Push branch
+- Open Pull Request
+
+## 📜 License
+
+MIT License — see LICENSE file
+
+## 🙏 Acknowledgments
+
+- Public movie APIs
+- Bootstrap UI community
+- Open-source contributors
+
+❤️ Built with passion using React & Node.js
